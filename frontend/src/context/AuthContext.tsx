@@ -9,7 +9,7 @@ import {
   useState,
 } from "react";
 
-import { loginUser } from "../helpers/api-communicator";
+import { loginUser, checkAuthStatus } from "../helpers/api-communicator";
 
 // defining User and useAuth types for typescript
 type User = {
@@ -35,6 +35,14 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   // useEffect to check if user cookes are still valid upon page refresh; if so, user doesn't need to log in again
   useEffect(() => {
     // fetch if the user's cookies are still valid, thereby skipping the login page
+    async function checkStatus() {
+      const data = await checkAuthStatus();
+      if (data) {
+        setUser({ email: data.email, name: data.name });
+        setIsLoggedIn(true);
+      }
+    }
+    checkStatus();
   }, []);
 
   const login = async (email: string, password: string) => {

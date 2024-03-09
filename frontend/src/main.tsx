@@ -10,8 +10,9 @@ import { AuthProvider } from "./context/AuthContext.tsx";
 import axios from "axios"; // backend to frontend communication/API calls/http requests
 import { Toaster } from "react-hot-toast"; //
 
+// http communication from frontend to backend using axios [using port from .env in backend]
 axios.defaults.baseURL = "http://localhost:5050/api/v1";
-axios.defaults.withCredentials = true; // to send cookies with request from backend
+axios.defaults.withCredentials = true; // to set and send cookies with request from backend
 
 // customized theme from mui library, ThemeProvider from mui to wrap theme with
 const theme = createTheme({

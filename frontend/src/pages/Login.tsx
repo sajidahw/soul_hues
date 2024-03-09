@@ -9,7 +9,7 @@ const Login = () => {
   const auth = useAuth();
   // using form data w/o handling state
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // prevent page from submitting
+    e.preventDefault(); // prevent refreshing page from submitting
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;

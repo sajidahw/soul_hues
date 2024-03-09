@@ -12,7 +12,14 @@ const app = express();
 // middleware are functions which gets executed *before* a request is processed. Within Node and Express, middleware is used to check JSON body validations, token/cookie validations, param validations etc.
 
 // for cors so this way if frontend is using another server port, and the backend is set up on another port, it will still recognize and allow communication to happen between the two; extra secure by specifying where opening from from browser
-app.use(cors({ origin: "http://localhost:5174", credentials: true })); // exchanging http only cookies with credentials
+// app.use(cors({ origin: "http://localhost:5173", credentials: true })); // exchanging http only cookies with credentials
+const corsOptions = {
+  origin: "http://localhost:5173",
+  credentials: true, //access-control-allow-credentials:true
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 
 // middleware using express where will pass incoming data in JSON format
 app.use(express.json());

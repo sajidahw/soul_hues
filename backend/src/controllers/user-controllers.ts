@@ -134,3 +134,34 @@ export const userLogin = async (
     return res.status(400).json({ message: "ERROR", cause: error.message });
   }
 };
+
+// check the authentication status
+export const verifyUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  // user token check
+  try {
+    // find user by id, checking validation on user to see if already exist via id check
+    const user = await User.findById(res.locals.jwtData.id);
+    if (!user) {
+      return res
+        .status(401)
+        .send("Uhoh, User is not registered or Token isn't working."); // user will need to register before logging in
+    }
+    console.log(user._id.toString(), res.locals.jwtData.id);
+    // not matching
+    if (user._id.toString() !== res.locals.jwtData.id) {
+      return res.status(401).send("Hmm, your permissions aren't valid.");
+    }
+
+    return res
+      .status(200)
+      .json({ message: "OK", name: user.name, email: user.email }); // removed id: user._id.toString() since sending name, email directly now after setting up Toast & auth on frontend
+    // response for status code 200 to all users, can see user or userid converted to string from json
+  } catch (error) {
+    console.log(error);
+    return res.status(400).json({ message: "ERROR", cause: error.message });
+  }
+};

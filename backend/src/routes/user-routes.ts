@@ -1,7 +1,16 @@
-
 import { Router } from "express";
-import { getAllUsers, userLogin, userSignup } from "../controllers/user-controllers.js";
-import { loginValidator, signupValidator, validate } from "../utils/validators.js";
+import {
+  getAllUsers,
+  userLogin,
+  userSignup,
+  verifyUser,
+} from "../controllers/user-controllers.js";
+import {
+  loginValidator,
+  signupValidator,
+  validate,
+} from "../utils/validators.js";
+import { verifyToken } from "../utils/token-manager.js";
 
 const userRoutes = Router();
 
@@ -13,5 +22,6 @@ userRoutes.get("/", getAllUsers); // to get from controller
 //user sign up via post request which triggers through validation before posting
 userRoutes.post("/signup", validate(signupValidator), userSignup); // name, email, password validation
 userRoutes.post("/login", validate(loginValidator), userLogin); // email, password validation
+userRoutes.get("/auth-status", verifyToken, verifyUser); // middlware check
 
 export default userRoutes;

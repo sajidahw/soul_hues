@@ -149,7 +149,7 @@ export const verifyUser = async (
       return res
         .status(401)
         .send("Uhoh, User is not registered or Token isn't working."); // user will need to register before logging in
-    }
+    } //userNotRegOrBadToken from constants.ts
     console.log(user._id.toString(), res.locals.jwtData.id);
     // not matching
     if (user._id.toString() !== res.locals.jwtData.id) {

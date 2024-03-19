@@ -8,6 +8,7 @@ body {
   background: #dd67b6a8; /* eclipsed by bkgd image below */
   background-image: url("sh_login.png");
   background-repeat: no-repeat; /* bkgd- all used with image setting */
+  background-repeat: repeat-y; /* verticallly */
   background-position: center;
   background-size: cover;
   /* color: #065e79fe; */

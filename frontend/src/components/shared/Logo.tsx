@@ -33,7 +33,7 @@ const Logo = () => {
       >
         <span style={{ fontSize: "1.2em" }}> Soul Hues: </span>
         {/* </Typography> */}
-        My Personality Color App <i>with Chat-GPT4</i>
+        My Personality Color App <i>with Chat-GPT4 and Dall-E 3</i>
       </Typography>
     </div>
   );

@@ -27,6 +27,6 @@ Users will be able to store their AI chatbot sessions within a MongoDB database 
 
 5. Open your browser and go to `http://localhost:PORT/` to view the app
 
-### To view and run the program online:
+<!-- ### To view and run the program online:
 
-The app is deployed on Vercel and can be accessed at: tbd
+The app is deployed on Vercel and can be accessed at: tbd -->

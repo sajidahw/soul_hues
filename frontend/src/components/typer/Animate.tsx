@@ -15,7 +15,7 @@ const Animate = () => {
       }}
       sequence={[
         // Same substring at the start will only be typed once, initially
-        "💡 Discover your mood color 🌈\nbased off of your personality! 🧠\n\n🛠️ Integrated with OpenAI's GPT-4 ",
+        "💡 Discover your mood color 🌈\nbased off of your personality! 🧠\n\n🛠️ Integrated with OpenAI's GPT-4 and Dall-E-3",
         2500,
         "",
       ]}

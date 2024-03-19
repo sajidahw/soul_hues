@@ -1,11 +1,13 @@
 import { Box, Typography, Button } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import CustomizedInput from "../components/shared/CustomizedInput"; // to use shared input field
 import { MdOutlineLogin } from "react-icons/md"; // login button icon
 import { toast } from "react-hot-toast"; // to show notifications
 import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const auth = useAuth();
   // using form data w/o handling state
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -24,13 +26,27 @@ const Login = () => {
       toast.error("Uhoh, unable to login!", { id: "login" });
     }
   };
+  // redirect user to chat page if already logged in
+  useEffect(() => {
+    if (auth?.user) {
+      return navigate("/chat");
+    }
+  }, [auth]);
+  ///sh_login.png
+
   return (
     <Box width={"100%"} height={"100%"} display={"flex"} flex={1}>
-      <Box padding={8} mt={8} display={{ md: "flex", sm: "none", xs: "none" }}>
+      <Box
+        padding={8}
+        mt={8}
+        // mx={8}
+        display={{ md: "flex", sm: "none", xs: "none" }}
+      >
         <img
-          src="/sh_login.png"
-          alt="Emotions with Ai"
-          style={{ width: "450px", borderRadius: "15px" }} //400px
+          src="/original_crystalball_shadowed.png"
+          alt="crystal ball" //310/400px
+          style={{ width: "510px", height: "500px", borderRadius: "425px" }} //400px, 450, 15px
+          className="image-inverted2" // rotate if added to circulate
         />
       </Box>
       <Box

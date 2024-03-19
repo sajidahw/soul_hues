@@ -9,7 +9,12 @@ import {
   useState,
 } from "react";
 
-import { loginUser, checkAuthStatus } from "../helpers/api-communicator";
+import {
+  loginUser,
+  checkAuthStatus,
+  logoutUser,
+  signupUser,
+} from "../helpers/api-communicator";
 
 // defining User and useAuth types for typescript
 type User = {
@@ -52,8 +57,20 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setIsLoggedIn(true);
     }
   };
-  const signup = async (name: string, email: string, password: string) => {};
-  const logout = async () => {}; // not requiring anything to logout
+  const signup = async (name: string, email: string, password: string) => {
+    const data = await signupUser(name, email, password); // authenticating user from backend's response
+    if (data) {
+      setUser({ name: data.name, email: data.email });
+      setIsLoggedIn(true);
+    }
+  };
+  const logout = async () => {
+    await logoutUser();
+    setIsLoggedIn(false);
+    setUser(null);
+    // reload page bc removing cookies takes awhile to refresh
+    window.location.reload();
+  }; // not requiring anything to logout
 
   // provider setting values which the children will use
   const value = {

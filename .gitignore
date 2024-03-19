@@ -147,3 +147,5 @@ dist
 .DS_Store
 .hintrc
 .vscode/
+robot.png
+/frontend/src/components/modal

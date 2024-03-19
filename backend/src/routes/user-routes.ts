@@ -2,6 +2,7 @@ import { Router } from "express";
 import {
   getAllUsers,
   userLogin,
+  userLogout,
   userSignup,
   verifyUser,
 } from "../controllers/user-controllers.js";
@@ -23,5 +24,6 @@ userRoutes.get("/", getAllUsers); // to get from controller
 userRoutes.post("/signup", validate(signupValidator), userSignup); // name, email, password validation
 userRoutes.post("/login", validate(loginValidator), userLogin); // email, password validation
 userRoutes.get("/auth-status", verifyToken, verifyUser); // middlware check
+userRoutes.get("/logout", verifyToken, userLogout); // middlware check + remove cookies
 
 export default userRoutes;

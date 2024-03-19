@@ -14,7 +14,7 @@ const app = express();
 // for cors so this way if frontend is using another server port, and the backend is set up on another port, it will still recognize and allow communication to happen between the two; extra secure by specifying where opening from from browser
 // app.use(cors({ origin: "http://localhost:5173", credentials: true })); // exchanging http only cookies with credentials
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "http://localhost:5173", // frontend
   credentials: true, //access-control-allow-credentials:true
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   optionSuccessStatus: 200,
@@ -33,3 +33,7 @@ app.use(morgan("dev")); // using morgan for logging requests, responses and stat
 app.use("/api/v1", appRouter); // endpoint transfers to appRouter from routes/index.ts
 
 export default app; // exporting app to use in index.ts
+
+// backend to front end is listed in frontend's main.tsx via axios:
+//axios.defaults.baseURL = "http://localhost:5050/api/v1";
+//

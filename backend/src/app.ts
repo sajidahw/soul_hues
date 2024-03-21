@@ -39,4 +39,4 @@ export default app; // exporting app to use in index.ts
 //
 
 // exporting the Express API to Vercel to be a serverless function
-module.exports = app;
+// module.exports = app;

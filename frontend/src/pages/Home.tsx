@@ -30,24 +30,24 @@ const Home = () => {
             my: 10,
           }}
         >
-          <img
+          {/* <img
             src="nuclear.jpg"
             // src="robot.png"
             alt="ideation"
             style={{ width: "30%", margin: "auto", borderRadius: "250px" }}
-          />
+          /> */}
           {/* <img
             src="soulhues_logo_cropped.png"
             // src="robot.png"
             alt="Sould Hues Logo"
             style={{ width: "200px", margin: "auto" }}
           /> */}
-          <img
+          {/* <img
             className="image-inverted rotate"
             src="openai.png"
             alt="openai"
             style={{ width: "200px", margin: "auto" }}
-          />
+          /> */}
         </Box>
         <Box sx={{ mx: 3, my: 3 }}></Box>
         <Box sx={{ display: "flex", width: "100%", mx: "auto" }}>

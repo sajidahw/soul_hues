@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "../backend/src/routes/index.ts"
+      "dest": "/soul_hues/backend/src/routes/index.ts"
     }
   ]
 }

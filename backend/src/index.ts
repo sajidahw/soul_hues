@@ -20,3 +20,6 @@ process.on("SIGINT", () => {
   console.log("Server is closing. Bye! 👋");
   process.exit(0);
 });
+
+// exporting the Express API to Vercel to be a serverless function
+module.exports = app;

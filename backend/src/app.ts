@@ -1,4 +1,4 @@
-// creating express app for backend server
+// creating express app for backend server, main server is on index.ts
 import express from "express";
 import { config } from "dotenv";
 import morgan from "morgan";
@@ -37,3 +37,6 @@ export default app; // exporting app to use in index.ts
 // backend to front end is listed in frontend's main.tsx via axios:
 //axios.defaults.baseURL = "http://localhost:5050/api/v1";
 //
+
+// exporting the Express API to Vercel to be a serverless function
+module.exports = app;

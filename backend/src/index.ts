@@ -22,4 +22,4 @@ process.on("SIGINT", () => {
 });
 
 // exporting the Express API to Vercel to be a serverless function
-module.exports = app;
+// module.exports = app;

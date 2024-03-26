@@ -149,3 +149,5 @@ dist
 .vscode/
 robot.png
 /frontend/src/components/modal
+vercel.json
+/vercel.json

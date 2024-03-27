@@ -1,10 +1,10 @@
 # Soul Hues, a custom ChatGPT AI Chatbot
 
-Soul Hues is a <b><i>personality color discovery app</i></b> which can turn a user’s colors into artwork. This app uses a personalized and interactive AI chatbot (OpenAI's ChatGPT-4) creation to determine a person’s color based on their personality and then uses DALL-E 3 to create a watercolor painting with their approved colors.
+Soul Hues is a <b><i>personality color discovery app</i></b> which can turn a user’s colors into artwork. This app uses a personalized and interactive AI chatbot (customized OpenAI's ChatGPT-4) creation to determine a person’s color based on their personality and then uses DALL-E 3 to create a watercolor painting with their approved colors.
 
 This is a MERN stack app using TypeScript where users will be able to authenticate their credentials using middleware validation chains (express-validator), JWT tokens (JSON web tokens), HTTP-Only cookies (cookie parser), signed cookies and password encryption using bcrypt.
 
-Users will be able to store their AI chatbot sessions within a MongoDB database for 7 days (retrieval and deletion) and interact with the AI in a React based front-end interface using mostly TypeScript.
+Users will be able to store their Soul Hues AI chat sessions within a MongoDB database for 7 days (retrieval and deletion) and interact with the AI in a React based front-end interface using mostly TypeScript.
 
 ### To run the program locally:
 
@@ -37,7 +37,7 @@ The app is deployed on Vercel and can be accessed at: tbd -->
 &ensp;
 &ensp;<img width="45%" alt="homepage" src="https://github.com/sajidahw/soul_hues/assets/88634981/4f4b2877-5070-4bd2-b1a1-5971441f532d" >
 
-Upon signing in, users will be able to chat with the AI Personality GPT-4 and receive a watercolor painting based on their personality colors from Dall-E-3.
+Upon signing in, users will be able to chat with the Soul Hues AI custom Personality GPT-4 and receive a watercolor painting based on their personality colors from Dall-E-3.
 
 1. Begin your conversation with the Soul Hues AI by typing <b><i>"I would like to discover a new personality color."</b></i>
    

@@ -35,9 +35,9 @@ The app is deployed on Vercel and can be accessed at: tbd -->
 
 ### Demo Screenshots:
 &ensp;
-<img width="45%" alt="homepage" src="https://github.com/sajidahw/soul_hues/assets/88634981/4f4b2877-5070-4bd2-b1a1-5971441f532d" >
+&ensp;<img width="45%" alt="homepage" src="https://github.com/sajidahw/soul_hues/assets/88634981/4f4b2877-5070-4bd2-b1a1-5971441f532d" >
 
-Upon signing in, users will be able to chat with the AI Personality GPT and receive a watercolor painting based on their personality colors from Dall-E.
+Upon signing in, users will be able to chat with the AI Personality GPT-4 and receive a watercolor painting based on their personality colors from Dall-E-3.
 
 1. Begin your conversation with the Soul Hues AI by typing <b><i>"I would like to discover a new personality color."</b></i>
    

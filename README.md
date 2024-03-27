@@ -30,12 +30,27 @@ Users will be able to store their AI chatbot sessions within a MongoDB database 
 <!-- ### To view and run the program online:
 
 The app is deployed on Vercel and can be accessed at: tbd -->
+<br><br>
+
 
 ### Demo Screenshots:
+&ensp;
+<img width="45%" alt="homepage" src="https://github.com/sajidahw/soul_hues/assets/88634981/4f4b2877-5070-4bd2-b1a1-5971441f532d" >
 
 Upon signing in, users will be able to chat with the AI Personality GPT and receive a watercolor painting based on their personality colors from Dall-E.
 
-1. Begin your conversation with the Soul Hues AI by typing "I would like to discover a new personality color."
+1. Begin your conversation with the Soul Hues AI by typing <b><i>"I would like to discover a new personality color."</b></i>
+   
+
 2. Answer the AI's questions to determine your personality color. Feel free to suggest your own color if you have one in mind or to inform the AI if you don't like the color it suggests.
+   &ensp;<img width="75%" alt="demo_convo" src="https://github.com/sajidahw/soul_hues/assets/88634981/104d92fa-19e3-441f-a478-07724540a7bd">
+
+   
 3. Once your personality color is determined, you will be given an image description. Copy that description and paste it into the Dall-E 3 image generator to create your watercolor painting.
+  &ensp; <img width="75%" alt="demo_copyimg_description" src="https://github.com/sajidahw/soul_hues/assets/88634981/88a8e33e-baec-4e9f-a4a8-d0a0853de1dc">
+
+   
 4. Enable your browser pop-ups, so you view your customized painting in a new window as well as see it minimized below the generator box. Enjoy your personalized watercolor painting!
+
+  &ensp; <img width="25%" alt="demo_pasted_imgbox" src="https://github.com/sajidahw/soul_hues/assets/88634981/31699b3b-04f3-4bfd-86a2-0b41006b597a">     &ensp; &emsp;&emsp;
+   <img width="40%" alt="demo_browserpopupimg" src="https://github.com/sajidahw/soul_hues/assets/88634981/bb59a104-56b1-401d-9277-45ef0acef37d">

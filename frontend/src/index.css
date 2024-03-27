@@ -16,6 +16,18 @@ body {
   color: white;
   font-family: "Roboto Slab", serif;
 }
+/* placeholder text for image generation box
+rgb(248, 247, 198)
+*/
+::placeholder {
+  color: palegoldenrod;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: palegoldenrod;
+}
 
 .avatar {
   width: 100%;

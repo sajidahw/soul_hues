@@ -27,7 +27,7 @@ const Home = () => {
             display: "flex",
             flexDirection: { md: "row", xs: "column", sm: "column" },
             gap: 5,
-            my: 10,
+            my: 10, //10
           }}
         >
           {/* <img
@@ -48,6 +48,16 @@ const Home = () => {
             alt="openai"
             style={{ width: "200px", margin: "auto" }}
           /> */}
+          <img
+            src="soulhues_namelogo.png"
+            alt="Soul Hues"
+            style={{
+              width: "25%",
+              margin: "auto",
+              borderRadius: "200px",
+              padding: 0,
+            }}
+          />
         </Box>
         <Box sx={{ mx: 3, my: 1 }}></Box>
         <Typography
@@ -55,8 +65,10 @@ const Home = () => {
             color: "white",
             borderColor: "white",
             border: 0,
-            padding: 2,
+            padding: 1,
             m: "auto",
+            my: 4,
+            mx: 3,
           }}
           align="center"
           variant="h1"

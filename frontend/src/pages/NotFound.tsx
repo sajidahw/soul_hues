@@ -60,7 +60,8 @@ const NotFound = () => {
             padding={2}
             fontWeight={600}
             // width={"100%"}
-            // display={"flex"}
+            display={"flex"}
+            flexDirection={"row"}
           >
             <FcLock
               style={{
@@ -69,7 +70,7 @@ const NotFound = () => {
                 fontSize: "55px",
               }}
             />
-            You must LOG IN to access chat pages.
+            You must LOG IN to access secure chat pages.
           </Typography>
         </Box>
       </Box>

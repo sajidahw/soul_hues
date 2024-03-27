@@ -1,4 +1,4 @@
-// //ImageGenerator.tsx
+// //ImageGenerator.tsx: React component for generating images from text prompts using DALL-E 3 API
 
 import React, { useState, useRef } from "react";
 import { Box, Button, Typography } from "@mui/material";
@@ -6,7 +6,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const ImageGenerator = () => {
-  const inputRef = useRef<HTMLInputElement | null>(null); // manipulate DOM for text input or w/o rerendering
+  const inputRef = useRef<HTMLTextAreaElement | null>(null); // manipulate DOM for text input or w/o rerendering, HTMLInputElement
   const [generatedImage, setGeneratedImage] = useState("");
 
   const handleImageGeneration = async () => {
@@ -111,10 +111,15 @@ const ImageGenerator = () => {
                 variant="outlined"
                 fullWidth
                 margin="normal" */}
-              <input
+              <textarea
+                // height={"50 px"} //for input instead of textarea
+                // width={"100%"} //input
+                rows={6}
+                cols={50}
+                // wrap="soft"
                 ref={inputRef}
-                type="text"
-                placeholder="Paste description for image..."
+                // type="text" // input
+                placeholder="Paste description HERE for AI image generation by DALL-E..."
                 style={{
                   width: "100%",
                   backgroundColor: "transparent",
@@ -123,7 +128,7 @@ const ImageGenerator = () => {
                   borderRadius: 7,
                   outline: "none",
                   color: "white",
-                  fontSize: "20px",
+                  fontSize: "13px", //20px
                   textAlign: "left",
                   border: "none",
                   padding: 2,

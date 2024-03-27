@@ -62,6 +62,7 @@ const ImageGenerator = () => {
             bgcolor: "rgb(33, 51, 117)", //blue
             borderRadius: 5,
             flexDirection: "column",
+            flex: 4,
             mx: 3,
             my: 3,
             p: 1,

@@ -108,12 +108,14 @@ const Chat = () => {
       >
         <Box
           sx={{
+            //sidebar box
             display: "flex",
             width: "100%",
-            height: "101vh", //80vh
+            height: "80vh", //80vh, 101vh
             bgcolor: "rgb(33, 51, 117)",
             borderRadius: 7,
             flexDirection: "column",
+            flex: 4,
             mx: 3,
           }}
         >
@@ -275,10 +277,12 @@ const Chat = () => {
 
         <Box
           sx={{
+            //chat conversational box
             width: "100%",
-            height: "90vh", //60vh, 80, 86
+            height: "112vh", //60vh, 80, 86, 112vh
             borderRadius: 3,
             mx: "auto",
+            my: 3,
             display: "flex",
             flexDirection: "column",
             overflow: "scroll",
@@ -309,11 +313,12 @@ const Chat = () => {
             style={{
               width: "100%",
               backgroundColor: "transparent",
-              padding: "35px", // 10px, 30px
+              padding: "35px", // 10px, 30px, 35px
               border: "none",
               outline: "none",
               color: "white",
               fontSize: "20px",
+              display: "flex",
             }}
           />
           <IconButton

@@ -17,16 +17,16 @@ body {
   font-family: "Roboto Slab", serif;
 }
 /* placeholder text for image generation box
-rgb(248, 247, 198)
+rgb(248, 247, 198), palegoldenrod
 */
 ::placeholder {
-  color: palegoldenrod;
+  color: rgb(168, 141, 74);
   opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder {
   /* Edge 12 -18 */
-  color: palegoldenrod;
+  color: rgb(168, 141, 74);
 }
 
 .avatar {

@@ -1,3 +1,5 @@
+/* Page view for chats */
+
 import { Box, Avatar, Typography, Button, IconButton } from "@mui/material";
 import { useRef, useState, useEffect, useLayoutEffect } from "react";
 import { useAuth } from "../context/AuthContext";
@@ -122,9 +124,11 @@ const Chat = () => {
               bgcolor: "rgb(40, 18, 46)", //black
               color: "rgb(250, 203, 122)", //white
               fontWeight: 700,
+              p: 1,
             }}
           >
-            {auth?.user?.name[0]} {auth?.user?.name.split(" ")[1][0]}
+            {auth?.user?.name[0]}
+            {auth?.user?.name.split(" ")[1][0]}
           </Avatar>
 
           <Typography

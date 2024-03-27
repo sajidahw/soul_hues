@@ -94,7 +94,7 @@ export const generateChatCompletion = async (
         {
           role: "assistant",
           content:
-            "Great! Let me prepare an image that represents these colors so that you can paste it for image generation using DALL-E. Let's see... a calming blue representing your depth, tranquility, and love for nature, paired with a soothing cream that depicts comfort and simplicity in your personality. Hold on for a moment while I create this for you...",
+            "Great! Let me prepare an image that represents these colors so that you can paste it for image generation using DALL-E. Let's see... a calming blue representing your depth, tranquility, and love for nature, paired with a soothing cream that depicts comfort and simplicity in your personality. Hold on for a moment while I create this description for you...",
         },
         ...chats,
       ],

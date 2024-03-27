@@ -17,6 +17,10 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+.avatar {
+  width: 100%;
+}
+
 .image-inverted {
   filter: invert(100%);
 }

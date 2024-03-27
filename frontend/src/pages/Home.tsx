@@ -1,4 +1,4 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme, Typography } from "@mui/material";
 import Animate from "../components/typer/Animate";
 import { Footer } from "../components/footer/Footer";
 
@@ -49,7 +49,24 @@ const Home = () => {
             style={{ width: "200px", margin: "auto" }}
           /> */}
         </Box>
-        <Box sx={{ mx: 3, my: 3 }}></Box>
+        <Box sx={{ mx: 3, my: 1 }}></Box>
+        <Typography
+          sx={{
+            color: "white",
+            borderColor: "white",
+            border: 0,
+            padding: 2,
+            m: "auto",
+          }}
+          align="center"
+          variant="h1"
+          fontSize={"30px"}
+          fontWeight={"400"}
+          boxShadow={"15px 15px 10px teal"}
+          gutterBottom
+        >
+          Peek at your potential conversation with AI!
+        </Typography>
         <Box sx={{ display: "flex", width: "100%", mx: "auto" }}>
           <img
             src="chat.png"
@@ -59,10 +76,10 @@ const Home = () => {
               margin: "auto",
               width: isBelowMd ? "80%" : "60%",
               borderRadius: 20,
-              boxShadow: " -5px -5px 105px purple", //#64f3d5
+              boxShadow: " 15px 15px 10px mediumvioletred", //#64f3d5
               marginTop: 20,
               marginBottom: 5, //10
-              padding: 4, //10
+              padding: 5, //10
             }}
           />
         </Box>

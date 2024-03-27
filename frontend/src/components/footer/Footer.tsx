@@ -7,10 +7,17 @@ export const Footer = () => {
           padding: 20,
           minHeight: "20vh",
           maxHeight: "30vh",
-          marginTop: 60, //60
+          marginTop: 20, //60
         }}
       >
-        <div style={{ fontSize: "30px", textAlign: "center", padding: "30px" }}>
+        <div
+          style={{
+            fontSize: "30px",
+            textAlign: "center",
+            padding: "30px",
+            fontStyle: "italic",
+          }}
+        >
           Adapted by Sajidah W. ✌️🫶💖
         </div>
       </div>

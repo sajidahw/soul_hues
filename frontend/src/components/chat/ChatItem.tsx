@@ -45,7 +45,13 @@ const ChatItem = ({
       }}
     >
       <Avatar sx={{ ml: "0" }}>
-        <img src="openai.png" alt="openai" width={"30px"} />
+        <img
+          className="avatar image-inverted rotate"
+          src="soulhues_logo_cropped.png"
+          alt="soul hues logo"
+          width={"30px"}
+        />
+        {/* //openai.png */}
       </Avatar>
       <Box>
         <Typography fontSize={"20px"}>{content}</Typography>

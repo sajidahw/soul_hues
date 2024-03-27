@@ -52,5 +52,5 @@ Upon signing in, users will be able to chat with the Soul Hues AI custom Persona
    
 4. Enable your browser pop-ups, so you view your customized painting in a new window as well as see it minimized below the generator box. Enjoy your personalized watercolor painting!
 
-  &ensp; <img width="25%" alt="demo_pasted_imgbox" src="https://github.com/sajidahw/soul_hues/assets/88634981/31699b3b-04f3-4bfd-86a2-0b41006b597a">     &ensp; &emsp;&emsp;
+  &ensp; <img width="20%" alt="demo_pasted_imgbox" src="https://github.com/sajidahw/soul_hues/assets/88634981/31699b3b-04f3-4bfd-86a2-0b41006b597a">     &ensp; &emsp;&emsp;
    <img width="40%" alt="demo_browserpopupimg" src="https://github.com/sajidahw/soul_hues/assets/88634981/bb59a104-56b1-401d-9277-45ef0acef37d">

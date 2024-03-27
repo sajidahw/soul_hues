@@ -71,8 +71,9 @@ const ChatItem = ({
         borderRadius: 2,
       }}
     >
-      <Avatar sx={{ ml: "0", bgcolor: "black", color: "whitesmoke" }}>
-        {auth?.user?.name[0]} {auth?.user?.name.split(" ")[1][0]}
+      <Avatar sx={{ ml: "0", bgcolor: "black", color: "whitesmoke", p: 1 }}>
+        {auth?.user?.name[0]}
+        {auth?.user?.name.split(" ")[1][0]}
       </Avatar>
       <Box>
         <Typography fontSize={"20px"}>{content}</Typography>
